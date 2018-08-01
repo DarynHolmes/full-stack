@@ -1,12 +1,10 @@
 # Full-Stack App Challenge
 
-This prototype is aimed at employees, enabling them to add and view properties.
-
-Clicking on a property in the sidebar shows the details of a property, and clicking on the '+' near the bottom right allows a user to add a new property.
+This prototype is aimed at employees, enabling them to add and view properties. It allows users to view and add properties.
 
 ## Project Structure
 
-There are two projects within this repo namely client and server. You need to use ``npm install` from the root level of each of these project folders.
+There are two projects within this repository, client and server. You need to use ``npm install` within each of these project folders.
 
 ### Server
 
@@ -24,7 +22,7 @@ npm run serve
 This project uses `node-dev`. This will restart the server when a file is changed. To use this option use:
 
 ```
-npm run serve
+npm run dev
 ```
 
 ### Data Persistance
