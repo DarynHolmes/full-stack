@@ -32,6 +32,7 @@ module.exports.typeDefs = gql`
     id: ID
     customer: Customer
     property: Property
+    dateTime: String
   }
 
   type Query {

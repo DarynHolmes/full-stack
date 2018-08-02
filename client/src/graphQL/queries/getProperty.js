@@ -10,6 +10,7 @@ export default gql`
       currency
       propertyType
       viewings {
+        dateTime
         customer {
           firstName
           lastName

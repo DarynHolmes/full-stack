@@ -61,6 +61,25 @@ Fetch a single property (use a valid id)
 }
 ```
 
+Fetch a single property with viewings (use a valid id)
+
+```
+{
+  property(id: "4ccee659-90ce-4a6d-a7f1-50aea9345ac8") {
+    id
+    shortDescription
+    price
+    viewings {
+      dateTime
+      customer {
+        firstName
+        lastName
+      }
+    }
+  }
+}
+```
+
 To add a property, run the following mutation:
 
 ```

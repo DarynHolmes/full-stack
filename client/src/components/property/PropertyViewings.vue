@@ -12,7 +12,7 @@
         <tr v-for="viewing in viewings" :key="viewing.id">
           <td>{{ viewing.customer.firstName }}</td>
           <td>{{ viewing.customer.lastName }}</td>
-          <td>the date</td>
+          <td>{{ viewing.dateTime }}</td>
         </tr>
       </tbody>
     </table>

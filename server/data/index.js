@@ -48,27 +48,32 @@ const viewings = [
   {
     id: 'cb7129b9-832b-4111-bf02-b641c996d0c5',
     propertyId: '9b0b4b62-a174-45c8-9f6d-181523e3322c',
-    customerId: '9258d3ce-0bfa-4c00-8e96-60447ba076dc'
+    customerId: '9258d3ce-0bfa-4c00-8e96-60447ba076dc',
+    dateTime: '2018/11/21 14:00'
   },
   {
     id: 'd85d6380-5942-48c9-8ea9-dd7237356e4e',
     propertyId: '9b0b4b62-a174-45c8-9f6d-181523e3322c',
-    customerId: 'b0911169-aa54-42e9-8c78-31f43d8ce684'
+    customerId: 'b0911169-aa54-42e9-8c78-31f43d8ce684',
+    dateTime: '2018/11/21 16:00'
   },
   {
     id: 'f707b625-7170-4c9a-850b-c93c1516e9b1',
     propertyId: '4ccee659-90ce-4a6d-a7f1-50aea9345ac8',
-    customerId: '9258d3ce-0bfa-4c00-8e96-60447ba076dc'
+    customerId: '9258d3ce-0bfa-4c00-8e96-60447ba076dc',
+    dateTime: '2018/12/13 10:00'
   },
   {
     id: '6fd14e6a-1429-4e04-94c0-72852f51b8a4',
     propertyId: '9b0b4b62-a174-45c8-9f6d-181523e3322c',
-    customerId: 'ee914641-182c-4b1d-a585-9a98de7aa49e'
+    customerId: 'ee914641-182c-4b1d-a585-9a98de7aa49e',
+    dateTime: '2019/01/11 18:30'
   },
   {
     id: 'd5029cdb-8c57-43e1-a537-0832eb1cb452',
     propertyId: '4ccee659-90ce-4a6d-a7f1-50aea9345ac8',
-    customerId: '034174ba-514b-415d-98ef-b4c7b1f2850f'
+    customerId: '034174ba-514b-415d-98ef-b4c7b1f2850f',
+    dateTime: '2019/01/18 18:30'
   }
 ]
 
