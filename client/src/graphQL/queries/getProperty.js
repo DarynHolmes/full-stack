@@ -9,6 +9,12 @@ export default gql`
       price
       currency
       propertyType
+      viewings {
+        customer {
+          firstName
+          lastName
+        }
+      }
     }
   }
 `

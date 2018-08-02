@@ -10,16 +10,29 @@
       <div class="property-title">Logn Description</div>
       <div>{{ property.longDescription }}</div>
     </div>
+    <div class="property-viewings">
+      <div class="property-title">Viewings</div>
+      <property-viewings :viewings="property.viewings"></property-viewings>
+    </div>
   </div>
 </template>
 
 <script>
 import accounting from 'accounting'
 import GET_PROPERTY_QUERY from '@/graphQL/queries/getProperty'
+import PropertyViewings from '@/components/property/PropertyViewings.vue'
 
 export default {
   name: 'property',
-  props: ['id'],
+  props: {
+    id: {
+      type: String,
+      required: true
+    }
+  },
+  components: {
+    PropertyViewings
+  },
   computed: {
     formattedPrice: function() {
       return accounting.formatMoney(this.property.price, {
@@ -36,7 +49,7 @@ export default {
         return { id: this.id }
       },
       error(error) {
-        console.error('We have got an error!', error)
+        console.error('Error ', error)
       }
     }
   }
@@ -53,22 +66,25 @@ export default {
   grid-template-areas:
     'type price'
     'short-description short-description'
-    'long-description long-description';
+    'long-description long-description'
+    'property-viewings property-viewings';
 }
 
 .property-title {
   font-size: 20px;
-  color: #2c3e5077;
-  margin-bottom: 10px;
+  color: #999;
+  margin-bottom: 15px;
 }
 
 .property-price {
   grid-area: price;
   text-align: right;
+  font-size: 20px;
 }
 
 .property-type {
   grid-area: type;
+  font-size: 20px;
 }
 
 .property-short-description {
@@ -81,5 +97,9 @@ export default {
 
 .saving-property {
   color: grey;
+}
+
+.property-viewings {
+  grid-area: property-viewings;
 }
 </style>

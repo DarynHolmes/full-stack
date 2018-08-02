@@ -28,15 +28,4 @@ export default {
 </script>
 
 <style scoped>
-.list-item {
-  border: solid 1px #2d9ca4;
-}
-
-.list-item {
-  transition: background-color 300ms linear;
-}
-
-.list-item:hover {
-  background-color: #63cdd4;
-}
 </style>

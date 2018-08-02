@@ -1,5 +1,10 @@
 <template>
-  <router-link :to="{name: 'property', params: { id: property.id } }" class="property-list-item" :class="{ 'saving-property-list-item': property.id.includes('temp') }">
+  <router-link :to="{name: 'property', params: { id: property.id } }"
+               class="property-list-item"
+               :class="{
+                 'saving-property-list-item': property.id.includes('temp'),
+                 'property-list-item-selected': property.id === $route.params.id
+                }">
     <div class="property-list-item-price">{{ formattedPrice }}</div>
     <div class="property-list-item-type">{{ property.propertyType }}</div>
     <div class="property-list-item-short-description">{{ property.shortDescription | truncate(80) }}</div>
@@ -11,7 +16,6 @@ import accounting from 'accounting'
 
 export default {
   name: 'property',
-  components: {},
   props: {
     property: {
       type: Object,
@@ -32,6 +36,8 @@ export default {
 
 <style scoped>
 .property-list-item {
+  transition: background-color 300ms linear;
+  border: 1px solid #999;
   text-decoration: none;
   color: inherit;
   padding: 20px;
@@ -42,6 +48,14 @@ export default {
   grid-template-areas:
     'type price'
     'description description';
+}
+
+.property-list-item-selected {
+  background-color: #eee;
+}
+
+.property-list-item:hover {
+  background-color: #bbb;
 }
 
 .property-list-item-price {

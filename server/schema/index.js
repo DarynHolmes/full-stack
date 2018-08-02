@@ -18,11 +18,27 @@ module.exports.typeDefs = gql`
     propertyType: PropertyType
     shortDescription: String
     longDescription: String
+    viewings: [Viewing]
+  }
+
+  type Customer {
+    id: ID
+    firstName: String
+    lastName: String
+    viewings: [Viewing]
+  }
+
+  type Viewing {
+    id: ID
+    customer: Customer
+    property: Property
   }
 
   type Query {
     properties: [Property]
     property(id: ID): Property
+    customer(id: ID): Customer
+    viewing(id: ID): Viewing
   }
 
   type Mutation {

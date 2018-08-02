@@ -44,7 +44,6 @@ import GET_PROPERTIES_QUERY from '@/graphQL/queries/getProperties'
 import GET_ENUM_VALUES_QUERY from '@/graphQL/queries/getEnumValues'
 import NEW_PROPERTY_MUTATION from '@/graphQL/queries/newProperty'
 import SelectList from '@/components/common/SelectList.vue'
-// import Property from './Property.vue'
 
 // used to give temporary IDs to properties
 // that have not yet been saved to the backend

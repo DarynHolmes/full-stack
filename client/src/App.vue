@@ -7,14 +7,15 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Lato');
+/* @import url('https://fonts.googleapis.com/css?family=Lato'); */
 html,
 body {
-  height: 94%;
+  /* height: 100%; */
+  /* width: 100%; */
 }
 
 body {
-  margin: 40px;
+  /* margin: 40px; */
 }
 
 #app {
@@ -23,14 +24,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   letter-spacing: 0.8px;
-  height: 100%;
+  height: 90vh;
   width: 100%;
-  display: table;
+  margin: 30px;
+  /* display: table; */
 }
 
 .row {
-  display: table-row;
-  width: 100%;
+  /* display: table-row; */
+  /* width: 100%; */
 }
 
 .main-area {
