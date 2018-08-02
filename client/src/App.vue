@@ -27,12 +27,6 @@ body {
   height: 90vh;
   width: 100%;
   margin: 30px;
-  /* display: table; */
-}
-
-.row {
-  /* display: table-row; */
-  /* width: 100%; */
 }
 
 .main-area {
