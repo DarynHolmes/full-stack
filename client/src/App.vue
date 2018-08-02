@@ -1,22 +1,13 @@
 <template>
   <div id="app">
-    <div class="main-area row">
+    <div class="main-area">
       <router-view/>
     </div>
   </div>
 </template>
 
 <style>
-/* @import url('https://fonts.googleapis.com/css?family=Lato'); */
-html,
-body {
-  /* height: 100%; */
-  /* width: 100%; */
-}
-
-body {
-  /* margin: 40px; */
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 #app {
   font-family: 'Lato', 'Avenir', Helvetica, Arial, sans-serif;
@@ -24,8 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   letter-spacing: 0.8px;
-  height: 90vh;
-  width: 100%;
+  height: 94vh;
   margin: 30px;
 }
 

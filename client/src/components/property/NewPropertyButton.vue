@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <button class="btn-new-property shadow">+</button> -->
     <router-link v-if="$route.name !== 'new-property'" class="btn-new-property shadow" :to="{ name: 'new-property'}">+</router-link>
   </div>
 </template>

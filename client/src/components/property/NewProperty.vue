@@ -32,7 +32,7 @@
         <div class="error">Type is required</div>
       </div>
 
-      <button class="btn-standard action shadow" @click="submit">Add Property</button>
+      <button class="btn-standard action shadow" @click.prevent="submit">Add Property</button>
     </form>
   </div>
 </template>
@@ -106,7 +106,6 @@ export default {
   methods: {
     async submit(e) {
       try {
-        e.preventDefault()
         this.$v.$touch()
 
         if (this.$v.$invalid) {
@@ -161,7 +160,6 @@ export default {
   flex-direction: column;
   color: #333;
   transition: color 1.3s linear;
-  /* background-color: green; */
 }
 
 input,

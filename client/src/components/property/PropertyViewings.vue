@@ -29,7 +29,6 @@ export default {
 
 <style scoped>
 table {
-  /* background-color: darkcyan; */
   width: 100%;
   border-collapse: collapse;
 }

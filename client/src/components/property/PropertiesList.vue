@@ -1,9 +1,7 @@
 <template>
-  <div class="properties-container">
     <div class="properties-list">
       <properties-list-item class="list-item" v-for="property in properties" :key="property.id" :property="property"></properties-list-item>
     </div>
-  </div>
 </template>
 
 <script>
