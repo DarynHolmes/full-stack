@@ -4,7 +4,7 @@ This prototype is aimed at employees, enabling them to add and view properties.
 
 ## Project Structure
 
-There are two projects within this repository, client and server. You need to use ``npm install` within each of these project folders.
+There are two projects within this repository, client and server. You need to use `npm install` within each of these project folders.
 
 ### Server
 
