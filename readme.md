@@ -121,7 +121,7 @@ On this page you will be able to add a new property. There is basic validation o
 
 To view the details of an individual property, click on a property on the list on the left. This will show the details of the property, including the long description.
 
-To return to adding a property, click the '+' button near the bottom right. This button is on visible if you are not already on the new property page.
+To return to adding a property, click the '+' button near the bottom right. This button is only visible if you are not already on the new property page.
 
 ### Polling
 
