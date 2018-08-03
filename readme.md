@@ -1,6 +1,6 @@
 # Full-Stack App Challenge
 
-This prototype is aimed at employees, enabling them to add and view properties. It allows users to view and add properties.
+This prototype is aimed at employees, enabling them to add and view properties.
 
 ## Project Structure
 
